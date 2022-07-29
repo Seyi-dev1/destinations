@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.hero{
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+ /* border-bottom: 0.1px solid rgb(184, 182, 182); */
+  padding: 5px;
+  position: absolute;
+  top:0;
+  z-index: 2;
+  width: 100%;
+  background-color: rgba(12, 12, 12, 0.5);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header .logo{
+  display: grid;
+  grid-template-columns: 3.8rem 4rem;
+  align-self: center;
+  margin-left: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.header .logo h3{
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5rem;
+  color: rgb(250, 92, 92);
+  align-self: center;
+}
+.header .title{
+  justify-self: end;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  margin-right: 30px;
+}
+.header .title a{
+  color: #fff;
+  text-decoration: none;
+  margin: 15px;
+}
+.hero{
+  position: relative;
+}
+.mySwiper{
+  width: 100%;
+  height: 45rem;
+}
+.mySwiper img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(55%);
+}
+.swiper-pagination{
+  display: grid;
+  grid-template-columns: repeat(6,9rem);
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  gap: 2rem;
 }
-
-.App-link {
-  color: #61dafb;
+.swiper-bullet {
+  display: grid;
+  align-content: center;
+	width: auto;
+	height: 40px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 15px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+	color:#fff;
+  letter-spacing: 1px;
+	opacity: 1;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.swiper-bullet-active {
+  color: #fff;
+	border-bottom: .2rem solid rgb(255, 65, 65);
+}
+.card{
+  height: 20rem;
+  display: grid;
+  grid-template-columns: 15rem 40rem;
+  padding: 20px;
+  gap: 20px 20px;
+}
+.card .card-image img{
+  object-fit: cover;
+  width: 100%;
+ height: 18rem;
+ border-radius: 15px;
 }
