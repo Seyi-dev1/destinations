@@ -15,7 +15,7 @@ const Hero =()=>{
     <div className='hero'>
     <Swiper
         loop={true}
-        speed={1000}
+        speed={2000}
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,
@@ -50,6 +50,7 @@ const Hero =()=>{
         <img src={grandCanyon} alt='tile'></img>
         </SwiperSlide>
       </Swiper>
+      <h1 className='heading'>Holiday Destinations</h1>
       </div>
   )
 }
